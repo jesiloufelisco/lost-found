@@ -1,0 +1,169 @@
+{
+  "title": "Lost and Found System for CSU",
+  "description": "A comprehensive digital platform for managing lost and found items at Caraga State University, replacing manual processes with efficient digital tracking and enhanced visibility for students and staff.",
+  "subtitle": "Modernizing Campus Lost and Found Services with Digital Solutions",
+  "backgroundImage": {
+    "src": "/images/markup.png",
+    "alt": "Abstract academic background with geometric patterns",
+    "overlay": {
+      "enabled": true,
+      "color": "rgba(27, 94, 32, 0.1)",
+      "opacity": 0.8
+    }
+  },
+  "features": [
+    {
+      "title": "Enhanced Visibility",
+      "description": "Campus-wide digital bulletin system that makes lost items searchable and visible to all students and staff, eliminating the need for physical visits to the guardhouse.",
+      "icon": "mdi-eye-outline"
+    },
+    {
+      "title": "Digital Tracking System",
+      "description": "Comprehensive item logging with timestamps, locations, and detailed descriptions replacing manual logbooks with efficient digital records.",
+      "icon": "mdi-map-marker-check"
+    },
+    {
+      "title": "Reduced Social Hesitation",
+      "description": "Anonymous browsing capabilities and user-friendly interface that encourages students to check for their belongings without embarrassment.",
+      "icon": "mdi-account-check"
+    },
+    {
+      "title": "Complete Traceability",
+      "description": "Advanced analytics and reporting features for administrators to track patterns, generate statistics, and make informed policy decisions.",
+      "icon": "mdi-chart-line"
+    }
+  ],
+  "version": "1.0.0",
+  "author": "CSU Development Team",
+  "lastUpdated": "2025-09-22",
+  "theme": {
+    "primaryColor": "#1b5e20",
+    "secondaryColor": "#faf6ed"
+  },
+  "ui": {
+    "showNavbar": true,
+    "showFooter": true,
+    "_comment": "Select the navbar component to use: 1, 2, 3, or 4",
+    "navbarComponent": "2",
+    "_footerComment": "Select the footer component to use: 1 or 2",
+    "footerComponent": "1",
+    "navbar": {
+      "title": "Lost & Found CSU",
+      "icon": "mdi-magnify",
+      "logo": {
+        "src": "/src/assets/csulogo.svg",
+        "alt": "CSU Lost and Found Logo",
+        "width": 32,
+        "height": 32
+      },
+      "color": "primary",
+      "elevation": 2,
+      "density": "comfortable",
+      "navigationItems": [
+        {
+          "_comment": "dont change this",
+          "label": "Features",
+          "action": "scroll",
+          "target": "features"
+        },
+        {
+          "_comment": "dont change this",
+          "label": "About",
+          "action": "scroll",
+          "target": "about"
+        }
+      ],
+      "ctaButton": {
+        "label": "Sign In",
+        "variant": "outlined",
+        "color": "on-primary",
+        "action": "navigate",
+        "_comment": "dont change this /auth cause it is linked to the auth page",
+        "target": "/auth"
+      }
+    },
+    "footer": {
+      "companyName": "CSU Lost & Found",
+      "tagline": "Connecting lost items with their owners",
+      "icon": "mdi-magnify",
+      "color": "grey-darken-3",
+      "copyright": "Caraga State University. All rights reserved.",
+      "socialLinks": [
+        {
+          "platform": "github",
+          "icon": "mdi-github",
+          "url": "https://github.com",
+          "label": "GitHub"
+        },
+        {
+          "platform": "twitter",
+          "icon": "mdi-twitter",
+          "url": "https://twitter.com",
+          "label": "Twitter"
+        },
+        {
+          "platform": "linkedin",
+          "icon": "mdi-linkedin",
+          "url": "https://linkedin.com",
+          "label": "LinkedIn"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Vue 3",
+          "icon": "mdi-vuejs",
+          "color": "green"
+        },
+        {
+          "name": "Vuetify 3",
+          "icon": "mdi-material-design",
+          "color": "blue"
+        }
+      ],
+      "thesisTeam": {
+        "enabled": true,
+        "title": "Development Team",
+        "subtitle": "Meet the team behind CSU's digital lost and found solution",
+        "members": [
+          {
+            "name": "Web Developer",
+            "role": "Frontend Specialist",
+            "avatar": "/images/team/security.jpg"
+          },
+          {
+            "name": "Web Developer",
+            "role": "Full Stack Developer",
+            "avatar": "/images/team/it.jpg"
+          },
+          {
+            "name": "",
+            "role": "Service Coordinator",
+            "avatar": "/images/team/affairs.jpg"
+          }
+        ]
+      }
+    }
+  },
+  "authPage": {
+    "title": "Welcome to CSU Lost & Found System",
+    "subtitle": "Access your digital lost and found platform",
+    "layout": {
+      "quotePosition": "left"
+    },
+    "quote": {
+      "text": "What is lost can always be found again, but what is found may be lost forever if not claimed.",
+      "author": "Lost & Found Wisdom",
+      "source": "Campus Life",
+      "motivationalText": "Every lost item has a story. Help us reunite belongings with their owners through our digital platform."
+    },
+    "backgroundImage": {
+      "src": "/images/auth-background.jpg",
+      "alt": "University campus with students and lost items",
+      "overlay": {
+        "enabled": true,
+        "color": "rgba(27, 94, 32, 0.05)",
+        "opacity": 0.9
+      }
+    }
+  }
+}

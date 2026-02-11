@@ -1,0 +1,46 @@
+/* .dashboard { */
+  /* padding: 24px; */
+  /* max-width: 1400px; */
+  /* margin: 0 auto; */
+/* } */
+
+.stat-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+}
+.quick-summary-card,
+.system-stats-card {
+  height: 345px;
+}
+
+.item-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 12px;
+}
+
+.item-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+}
+
+.items-container {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.v-card {
+  border-radius: 12px;
+}
+
+.v-chip {
+  font-weight: 600;
+}
+
+.gap-2 {
+  gap: 8px;
+}
