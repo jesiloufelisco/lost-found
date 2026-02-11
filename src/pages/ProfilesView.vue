@@ -1,20 +1,4 @@
-<script setup lang="ts">
-import InnerLayoutWrapper from '@/layouts/InnerLayoutWrapper.vue';
-import ProfilesWidget from '@/pages/admin/components/ProfilesWidget.vue';
-import ProfileFormUpdate from '@/pages/admin/components/ProfileFormUpdate.vue';
 
-// Handle profile widget events
-const handleEditProfile = () => {
-  console.log('Edit profile clicked')
-  // Focus on the form section
-  document.getElementById('profile-form')?.scrollIntoView({ behavior: 'smooth' })
-}
-
-const handleViewPermissions = () => {
-  console.log('View permissions clicked')
-  // TODO: Navigate to permissions page or open modal
-}
-</script>
 
 <template>
   <InnerLayoutWrapper #content>
@@ -51,3 +35,20 @@ const handleViewPermissions = () => {
    </v-container>
   </InnerLayoutWrapper>
 </template>
+<script setup lang="ts">
+import InnerLayoutWrapper from '@/layouts/InnerLayoutWrapper.vue';
+import ProfilesWidget from '@/pages/admin/components/ProfilesWidget.vue';
+import ProfileFormUpdate from '@/pages/admin/components/ProfileFormUpdate.vue';
+
+// Handle profile widget events
+const handleEditProfile = () => {
+  console.log('Edit profile clicked')
+  // Focus on the form section
+  document.getElementById('profile-form')?.scrollIntoView({ behavior: 'smooth' })
+}
+
+const handleViewPermissions = () => {
+  console.log('View permissions clicked')
+  // TODO: Navigate to permissions page or open modal
+}
+</script>
